@@ -1,7 +1,7 @@
 
 
 let counter = document.getElementsByTagName('h2')
-counter[0].style.color ='red'
+counter[0].style.color ='blue'
 
 // const btn = document.querySelector('.btn')
 // const Counter = document.querySelector('h2')
