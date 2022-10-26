@@ -31,17 +31,23 @@ let dec = document.querySelector('.dec')
 // DECREASE
 function DECREASE(){
     heading.innerText--
+    let decrease  = document.body
+    decrease.style.backgroundColor ='yellow'
 }
 dec.addEventListener('click', DECREASE)
 
 // RESET
 function RESET(){
     heading.innerText = 0
+    let reset  = document.body
+    reset.style.backgroundColor ='red'
 }
 res.addEventListener('click', RESET)
 
 // INCREASE
 function INCREASE(){
     heading.innerText++
+    let increase  = document.body
+    increase.style.backgroundColor ='green'
 }
 inc.addEventListener('click', INCREASE)
