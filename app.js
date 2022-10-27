@@ -31,23 +31,32 @@ let dec = document.querySelector('.dec')
 // DECREASE
 function DECREASE(){
     heading.innerText--
-    let decrease  = document.body
-    decrease.style.backgroundColor ='yellow'
+    // let decrease  = document.body
+    // decrease.style.backgroundColor ='yellow'
+    if(heading.innerText < 0){
+        document.body.style.backgroundColor ='red'
+    }
 }
 dec.addEventListener('click', DECREASE)
 
 // RESET
 function RESET(){
     heading.innerText = 0
-    let reset  = document.body
-    reset.style.backgroundColor ='red'
+    // let reset  = document.body
+    // reset.style.backgroundColor ='red'
+    if(Number(heading.innerText)  === 0){
+        document.body.style.backgroundColor = 'yellow'
+    }
 }
 res.addEventListener('click', RESET)
 
 // INCREASE
 function INCREASE(){
     heading.innerText++
-    let increase  = document.body
-    increase.style.backgroundColor ='green'
+    // let increase  = document.body
+    // increase.style.backgroundColor ='green'
+    if(heading.innerText > 0){
+        document.body.style.backgroundColor = 'green'
+    }
 }
 inc.addEventListener('click', INCREASE)
